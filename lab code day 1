@@ -211,4 +211,13 @@ To https://github.com/CodeWithJahir/git_23_07_lab.git
    f635f11..f37a8bf  main -> main
 
 devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
-$
+$ git rm 23_07.txt
+rm '23_07.txt'
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git commit -m "12"
+[main 7b60d41] 12
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 23_07.txt
+
+
