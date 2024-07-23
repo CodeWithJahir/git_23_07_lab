@@ -1,0 +1,214 @@
+at first we need to create our directory in the origin or local machine
+then we need to add text file then push it into the main or github repository
+and then vice versa from github repository we need to pull it into our local or origin machine
+
+
+
+
+
+devops@MIL014 MINGW64 ~
+$ pwd
+/c/Users/devops
+
+devops@MIL014 MINGW64 ~
+$ cd D:
+
+devops@MIL014 MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/     Ritri_056/                    ala.txt
+ 221_Saeed_Ahmed/   Rupsha_2161067/               data_ml.xls
+ Anubhab_2161059/   Sayak_017/                    pythonTest.py
+ Exam_266/          Subhajit_20/                  pythonTest1.py
+ Iman_050/         'System Volume Information'/   shankarkumar_36/
+ Pratik_046/        abhishek-48/                  siburajak_exam_/
+
+devops@MIL014 MINGW64 /d
+$ gedit jahir
+bash: gedit: command not found
+
+devops@MIL014 MINGW64 /d
+$ mkdir jahir
+
+devops@MIL014 MINGW64 /d
+$ mkdir git_23_07
+
+devops@MIL014 MINGW64 /d
+$ cd git
+bash: cd: git: No such file or directory
+
+devops@MIL014 MINGW64 /d
+$ cd git_23_07/
+
+devops@MIL014 MINGW64 /d/git_23_07
+$ cd ..
+
+devops@MIL014 MINGW64 /d
+$ cd jahir
+
+devops@MIL014 MINGW64 /d/jahir
+$ mdkir git_23_07
+bash: mdkir: command not found
+
+devops@MIL014 MINGW64 /d/jahir
+$ mkdir git_23_07
+
+devops@MIL014 MINGW64 /d/jahir
+$ cd git_23_07
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07
+$ git clone https://github.com/CodeWithJahir/git_23_07_lab.git
+Cloning into 'git_23_07_lab'...
+fatal: unable to access 'https://github.com/CodeWithJahir/git_23_07_lab.git/': Failed to connect to github.com port 443 after 21184 ms: Couldn't connect to server
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07
+$ git clone https://github.com/CodeWithJahir/git_23_07_lab.git
+Cloning into 'git_23_07_lab'...
+warning: You appear to have cloned an empty repository.
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07
+$ ls
+git_23_07_lab/
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07
+$ cd git_23_07_lab/
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ ls
+23_07.txt
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        23_07.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git add *
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   23_07.txt
+
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git config user.name "Md Jahir"
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git config user.email "its.me.mdjahirchand1@gmail.com"
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git commit -m "1st commit"
+[main (root-commit) bfec31d] 1st commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 23_07.txt
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 216.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/CodeWithJahir/git_23_07_lab.git
+ * [new branch]      main -> main
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ ls
+23_07.txt
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 937 bytes | 9.00 KiB/s, done.
+From https://github.com/CodeWithJahir/git_23_07_lab
+   bfec31d..f635f11  main       -> origin/main
+Updating bfec31d..f635f11
+Fast-forward
+ text2 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text2
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ ls
+23_07.txt  text2
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ gedit text2
+bash: gedit: command not found
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ cat text2
+lab text file 2
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ text2
+bash: text2: command not found
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ cat text2
+lab text file 2
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git commit -m "2nd commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   text2
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git add *
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   text2
+
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git commit -m "2nd commit"
+[main f37a8bf] 2nd commit
+ 1 file changed, 4 insertions(+)
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/CodeWithJahir/git_23_07_lab.git
+   f635f11..f37a8bf  main -> main
+
+devops@MIL014 MINGW64 /d/jahir/git_23_07/git_23_07_lab (main)
+$
